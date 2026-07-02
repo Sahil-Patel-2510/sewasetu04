@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #f4f9ff 0%, #e3f2ff 100%);
+    color: #333;
+}
+
+.login-container {
+    width: min(460px, 95%);
+    background: #ffffff;
+    padding: 34px 30px;
+    border-radius: 24px;
+    box-shadow: 0 28px 70px rgba(37, 78, 124, 0.14);
+    text-align: left;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 24px;
+    color: #1f3044;
+    font-size: 2rem;
+}
+
+p {
+    margin: 0;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.message.success {
+    background: #d1fae5;
+    color: #064e3b;
+    border: 1px solid #6ee7b7;
+}
+
+.message.error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2e3d52;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    border: 1px solid #d2dae5;
+    background: #f8fbff;
+    font-size: 1rem;
+    color: #1f2b3a;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #2f78ff;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.login-form button:hover {
+    background: #255fd1;
+}
+
+.signup-link {
+    margin-top: 18px;
+    font-size: 0.95rem;
+}
+
+.signup-link a {
+    color: #2f78ff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 12px;
+    background: #2f78ff;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 14px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background: #255fd1;
+    transform: translateY(-1px);
+}
+
+.login-form input:focus,
+.login-form select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(47, 120, 255, 0.18);
+    border-color: #2f78ff;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
